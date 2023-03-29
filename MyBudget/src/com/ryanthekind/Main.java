@@ -22,6 +22,8 @@ public class Main {
 		System.out.println("Thank you, you said $" + monthlyIncome );
 		
 		scanner.close();
+		
+		Budget budget = new Budget(2000, 500);
 
 	}
 
