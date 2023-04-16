@@ -12,7 +12,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		
+
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("how much do take home each month? ");
@@ -23,7 +23,8 @@ public class Main {
 		
 		scanner.close();
 		
-		Budget budget = new Budget(2000, 500);
+		Budget budget = new Budget(3000, 500);
+		
 
 	}
 

@@ -24,6 +24,28 @@ public class Budget {
 		System.out.println(asset);
 		//System.out.println("I'm the budget constructor");
 	}
+
+
+	public int getUserIncome() {
+		return userIncome;
+	}
+
+
+	public void setUserIncome(int userIncome) {
+		this.userIncome = userIncome;
+	}
+
+
+	public int getExpense() {
+		return expense;
+	}
+
+
+	public void setExpense(int expense) {
+		this.expense = expense;
+	}
+	
+	
 	
 
 }
