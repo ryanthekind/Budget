@@ -1,6 +1,5 @@
 package com.ryanthekind;
 
-import java.util.Scanner;
 
 /**
  * This program builds off the procedural program by implementing OOP
@@ -14,8 +13,12 @@ public class BudgetObjectStyle {
 		
 		
 	Person personA = new Person("Ryan");
+	personA.setMonthlyIncome(3000);
+	personA.setMonthlyExpenses(1800);
 	
 	personA.printDetails();
+	
+
 	}
 
 }

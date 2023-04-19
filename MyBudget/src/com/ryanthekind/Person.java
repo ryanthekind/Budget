@@ -15,9 +15,9 @@ public class Person {
 	private int monthlyIncome;
 	private int monthlyExpenses;
 	
-	double monthlyAssets= monthlyIncome- monthlyExpenses;
-	
-	double annualTakeHome = monthlyIncome * 12;
+//	double monthlyAssets= monthlyIncome- monthlyExpenses;
+//	
+//	double annualTakeHome = monthlyIncome * 12;
 	
 	
 	// Create a constructor
@@ -26,9 +26,39 @@ public class Person {
 		this.person = person;
 	}
 	
+	
+	// Generate Getters and Setters
+	public String getPerson() {
+		return person;
+	}
+
+	public int getMonthlyIncome() {
+		return monthlyIncome;
+	}
+
+
+	public int getMonthlyExpenses() {
+		return monthlyExpenses;
+	}
+
+
+	//Setters
+	public void setMonthlyIncome(int monthlyIncome) {
+		this.monthlyIncome = monthlyIncome;
+	}
+
+	public void setMonthlyExpenses(int monthlyExpenses) {
+		this.monthlyExpenses = monthlyExpenses;
+	}
+	
+	
+	
+	
+	
 	// printDetails method prints the person details to the console
 	public void printDetails() {
-		System.out.printf("%s has printed \n", person);
+		System.out.printf("%s has printed. \nMonthly income is $%d. \nMonthly expenses are $%d \n", person, monthlyIncome, monthlyExpenses);
 	}
+
 
 }
