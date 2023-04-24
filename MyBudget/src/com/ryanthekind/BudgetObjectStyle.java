@@ -18,7 +18,10 @@ public class BudgetObjectStyle {
 	
 	personA.printDetails();
 	
+	personA.monthlyAssets();
 
+	System.out.println();
+	System.out.println(personA.monthlyAssets());
 	}
 
 }

@@ -17,7 +17,7 @@ public class Person {
 	
 //	double monthlyAssets= monthlyIncome- monthlyExpenses;
 //	
-//	double annualTakeHome = monthlyIncome * 12;
+	double annualTakeHome = monthlyIncome * 12;
 	
 	
 	// Create a constructor
@@ -52,12 +52,17 @@ public class Person {
 	}
 	
 	
+	// create a method
+	public double monthlyAssets() {
+		double result = monthlyIncome - monthlyExpenses;
+		return result;
+	}
 	
 	
 	
 	// printDetails method prints the person details to the console
 	public void printDetails() {
-		System.out.printf("%s has printed. \nMonthly income is $%d. \nMonthly expenses are $%d \n", person, monthlyIncome, monthlyExpenses);
+		System.out.printf("%s has printed. \nMonthly income is $%d. \nMonthly expenses are $%d \nTest: $%.2f \n", person, monthlyIncome, monthlyExpenses, monthlyAssets());
 	}
 
 
